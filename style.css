@@ -1,0 +1,33 @@
+#box1{
+    position: absolute;
+    top: 0px;
+    display: inline-block;
+    height: 1080px;
+    width: 700px;
+}
+#box2{
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    display: inline-block;
+    height: 200px;
+    width: 1600px;
+}
+#box3{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: inline-block;
+    height: 1080px;
+    width: 700px;
+}
+div {
+    border: 3px solid red;
+}
+#logo_img{
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+}
