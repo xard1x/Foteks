@@ -1,33 +1,53 @@
+#main_box{
+    height: 1080px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 #box1{
     position: absolute;
-    top: 0px;
-    display: inline-block;
-    height: 1080px;
-    width: 700px;
+    top: 0.1%;
+    left: 0px;
+    height: 99.9%;
+    width: 22%;
 }
 #box2{
     position: absolute;
-    top: 0px;
-    left: 900px;
-    display: inline-block;
-    height: 200px;
-    width: 1600px;
+    top: 0.001%;
+    left: 22%;
+    height: 10%;
+    width: 56%;
 }
 #box3{
     position: absolute;
-    top: 0px;
-    right: 0;
-    display: inline-block;
-    height: 1080px;
-    width: 700px;
+    top: 0.01%;
+    right: 0.01%;
+    height: 99.9%;
+    width: 22%;
+}
+#img_backg{
+    position: absolute;
+    left: 22%;
+    top: 10%;
+    width: 56%;
+    height: 50%;
+    background-color: #1d80e3;
+    z-index: -1;
+    border-radius: 50px;
 }
 div {
-    border: 3px solid red;
+    border: 1px solid red;
 }
 #logo_img{
+    width: 10%;
+    height: 99%;
+}
+#main_img{
     position: absolute;
-    top: 0px;
-    left: 700px;
-    width: 200px;
-    height: 200px;
+    left: 22%;
+    top: 10%;
+    border-radius: 50px;
+    opacity: 0.6;
 }
