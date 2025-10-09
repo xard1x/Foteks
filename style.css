@@ -37,7 +37,7 @@ div {
     border-radius: 50px;
     opacity: 0.6;
 }
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 480px) {
     #box2{
     position: absolute;
     top: 0.001%;
