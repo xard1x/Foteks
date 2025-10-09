@@ -6,32 +6,18 @@
     right: 0;
     left: 0;
 }
-#box1{
-    position: absolute;
-    top: 0.1%;
-    left: 0px;
-    height: 99.9%;
-    width: 22%;
-}
 #box2{
     position: absolute;
     top: 0.001%;
-    left: 22%;
+    left: 20%;
     height: 10%;
-    width: 56%;
-}
-#box3{
-    position: absolute;
-    top: 0.01%;
-    right: 0.01%;
-    height: 99.9%;
-    width: 22%;
+    width: 60%;
 }
 #img_backg{
     position: absolute;
-    left: 22%;
-    top: 10%;
-    width: 56%;
+    left: 20%;
+    top: 12%;
+    width: 60%;
     height: 50%;
     background-color: #1d80e3;
     z-index: -1;
@@ -46,8 +32,80 @@ div {
 }
 #main_img{
     position: absolute;
-    left: 22%;
-    top: 10%;
+    left: 20%;
+    top: 12%;
     border-radius: 50px;
     opacity: 0.6;
+}
+@media only screen and (max-width : 768px) {
+    #box2{
+    position: absolute;
+    top: 0.001%;
+    left: 10%;
+    height: 5%;
+    width: 80%;
+    }
+    #main_box{
+    height: 432px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    }
+    #main_img{
+    position: absolute;
+    left: 10%;
+    top: 7%;
+    border-radius: 10px;
+    opacity: 0.6;
+    width: 80%;
+    height: 25%;
+    }
+    #img_backg{
+    position: absolute;
+    left: 10%;
+    top: 7%;
+    width: 80%;
+    height: 25%;
+    background-color: #1d80e3;
+    z-index: -1;
+    border-radius: 10px;
+    }
+}
+@media only screen and (min-width : 2112px) {
+    #main_box{
+        height: 2160px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    #box2{
+        position: absolute;
+        top: 0.001%;
+        left: 20%;
+        height: 10%;
+        width: 60%;
+    }
+    #img_backg{
+        position: absolute;
+        left: 20%;
+        top: 12%;
+        width: 60%;
+        height: 50%;
+        background-color: #1d80e3;
+        z-index: -1;
+        border-radius: 50px;
+    }
+    #main_img{
+        position: absolute;
+        left: 20%;
+        top: 12%;
+        border-radius: 50px;
+        opacity: 0.6;
+        width: 60%;
+        height: 50%;
+    }
 }
