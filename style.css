@@ -27,7 +27,7 @@
     border-radius: 50px;
 }
 div {
-    border: solid 1px red;
+
 }
 #logo_img{
     position: absolute;
@@ -70,7 +70,7 @@ div {
 @media only screen and (max-width : 740px) {
     #logo_text{
     position: absolute;
-    bottom: 93.5%;
+    bottom: 94%;
     left: 17%;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
@@ -84,9 +84,9 @@ div {
     #box1{
     display: flex;
     position: absolute;
-    top: 0.5%;
+    top: 1.2%;
     left: 40%;
-    height: 7.7%;
+    height: 5%;
     width: 60%;
     justify-content: space-around;
     align-items: center;
@@ -105,7 +105,7 @@ div {
     }
     #logo_img{
     position: absolute;
-    top: 1.5%;
+    top: 1%;
     left: 1%;
     width: 15%;
     height: 5%;
@@ -121,7 +121,7 @@ div {
     #main_img{
     position: absolute;
     left: 1%;
-    top: 9%;
+    top: 7%;
     border-radius: 10px;
     opacity: 0.6;
     width: 98%;
@@ -130,7 +130,7 @@ div {
     #img_backg{
     position: absolute;
     left: 1%;
-    top: 9%;
+    top: 7%;
     width: 98%;
     height: 25%;
     background-color: #1d80e3;
