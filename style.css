@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 #main_box{
     height: 1080px;
     width: 100%;
@@ -53,8 +56,10 @@ div {
     opacity: 0.6;
 }
 .text1{
+    text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
+    color: #000000;
 }
 .but1{
     border: none;
