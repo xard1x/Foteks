@@ -27,7 +27,7 @@
     border-radius: 50px;
 }
 div {
-    
+    border: solid 1px red;
 }
 #logo_img{
     position: absolute;
@@ -67,17 +67,48 @@ div {
     color: white;
     font-weight: bold;
 }
-@media only screen and (max-width : 480px) {
-    #box2{
+@media only screen and (max-width : 740px) {
+    #logo_text{
     position: absolute;
-    top: 0.001%;
-    left: 1%;
-    height: 7%;
-    width: 98%;
+    bottom: 93.5%;
+    left: 17%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #043464;
+    }
+    .text1{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    }
+    #box1{
+    display: flex;
+    position: absolute;
+    top: 0.5%;
+    left: 40%;
+    height: 7.7%;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .but1{
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 25%;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    background-color: #1d80e3;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
     }
     #logo_img{
-    width: 20%;
-    height: 99%;
+    position: absolute;
+    top: 1.5%;
+    left: 1%;
+    width: 15%;
+    height: 5%;
     }
     #main_box{
     height: 1400px;
@@ -108,6 +139,34 @@ div {
     }
 }
 @media only screen and (min-width : 2112px) {
+    #logo_text{
+    position: absolute;
+    bottom: 94%;
+    left: 28%;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #043464;
+    }
+    #logo_img{
+    position: absolute;
+    top: 1.5%;
+    left: 20%;
+    width: 7%;
+    height: 5%;
+    }
+    .but1{
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 25%;
+    border-radius: 50px;
+    font-family: "Roboto", sans-serif;
+    background-color: #1d80e3;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    }
     #main_box{
         height: 3000px;
         width: 100%;
@@ -116,17 +175,20 @@ div {
         right: 0;
         left: 0;
     }
-    #box2{
-        position: absolute;
-        top: 0.001%;
-        left: 20%;
-        height: 10%;
-        width: 60%;
+    #box1{
+    display: flex;
+    position: absolute;
+    top: 1%;
+    left: 35%;
+    height: 6%;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
     }
     #img_backg{
         position: absolute;
         left: 20%;
-        top: 12%;
+        top: 8%;
         width: 60%;
         height: 50%;
         background-color: #1d80e3;
@@ -136,7 +198,7 @@ div {
     #main_img{
         position: absolute;
         left: 20%;
-        top: 12%;
+        top: 8%;
         border-radius: 50px;
         opacity: 0.6;
         width: 60%;
