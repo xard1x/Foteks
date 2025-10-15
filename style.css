@@ -29,9 +29,6 @@ html {
     z-index: -1;
     border-radius: 50px;
 }
-div {
-
-}
 #logo_img{
     position: absolute;
     top: 1.5%;
@@ -71,6 +68,33 @@ div {
     background-color: #1d80e3;
     color: white;
     font-weight: bold;
+}
+#info_box{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 25%;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+}
+#info_box1{
+    border-radius: 30px;
+    background-color: #1662c6;
+    width: 30%;
+    height: 100%;
+}
+#info_box2{
+    border-radius: 30px;
+    background-color: #1d80e3;
+    width: 30%;
+    height: 100%;
+}
+#info_box3{
+    border-radius: 30px;
+    background-color: #4ca3fa;
+    width: 30%;
+    height: 100%;
 }
 @media only screen and (max-width : 740px) {
     #logo_text{
