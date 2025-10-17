@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+span{
+    font-weight: bold;
+}
 #main_box{
     height: 1080px;
     width: 100%;
@@ -58,6 +61,12 @@ html {
     font-size: 20px;
     color: #000000;
 }
+.text2{
+    margin-left: 6%;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+}
 .but1{
     border: none;
     outline: none;
@@ -79,18 +88,24 @@ html {
     top: 60%;
 }
 #info_box1{
+    display: flex;
+    align-items: center;
     border-radius: 30px;
     background-color: #1662c6;
     width: 30%;
     height: 100%;
 }
 #info_box2{
+    display: flex;
+    align-items: center;
     border-radius: 30px;
     background-color: #1d80e3;
     width: 30%;
     height: 100%;
 }
 #info_box3{
+    display: flex;
+    align-items: center;
     border-radius: 30px;
     background-color: #4ca3fa;
     width: 30%;
