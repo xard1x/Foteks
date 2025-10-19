@@ -45,17 +45,40 @@
     left: 22%;
     top: 10%;
     width: 53%;
-    height: 20%;
-    
+    height: 20%;    
 }
 #color_theme_opt{
     width: 30%;
+    height: 100%;
+}
+#theme_txt_opt{
+    margin-left: 10%;
+}
+#dark_radio {
+    position: absolute;
+    left: 15%;
+}
+#white_radio{
+    position: absolute;
+    left: 2.5%;
+}
+#theme_txt_opt1{
+    position: absolute;
+    top: 34.5%;
+    left: 17.5%;
+}
+#theme_txt_opt2{
+    position: absolute;
+    top: 34.5%;
+    left: 5%;
+}
+.text2_opt{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
 }
 .text1_opt{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     color: #ffffff;
     }
-div{
-    border: red solid 1px;
-}
