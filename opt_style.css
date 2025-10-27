@@ -48,6 +48,16 @@
     width: 53%;
     height: 20%;    
 }
+#lang_opt{
+    display: inline-flex;
+    background-color: #1d80e3;
+    border-radius: 30px;
+    position: absolute;
+    left: 22%;
+    top: 35%;
+    width: 53%;
+    height: 20%;    
+}
 #color_theme_opt{
     width: 30%;
     height: 100%;
@@ -57,6 +67,9 @@
     height: 100%;
 }
 #theme_txt_opt{
+    margin-left: 10%;
+}
+#lang_txt_opt{
     margin-left: 10%;
 }
 #color_txt_opt{
@@ -70,12 +83,30 @@
     position: absolute;
     left: 2.5%;
 }
+#rus_radio {
+    position: absolute;
+    left: 15%;
+}
+#eng_radio{
+    position: absolute;
+    left: 2.5%;
+}
 #theme_txt_opt1{
     position: absolute;
     top: 34.5%;
     left: 17.5%;
 }
 #theme_txt_opt2{
+    position: absolute;
+    top: 34.5%;
+    left: 5%;
+}
+#lang_txt_opt1{
+    position: absolute;
+    top: 34.5%;
+    left: 17.5%;
+}
+#lang_txt_opt2{
     position: absolute;
     top: 34.5%;
     left: 5%;
