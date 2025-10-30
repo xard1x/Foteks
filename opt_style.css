@@ -32,7 +32,7 @@
     display: flex;
     position: absolute;
     top: 0.3%;
-    left: 35%;
+    left: 40%;
     height: 7.7%;
     width: 40%;
     justify-content: flex-start;
@@ -138,4 +138,79 @@
 #red_radio{
     position: absolute;
     left: 45%;
+}
+@media only screen and (max-width : 740px) {
+    div{
+        border: red solid 1px;
+    }
+    #logo_text_opt{
+    position: absolute;
+    top: 0.7%;
+    left: 17%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #043464;
+    }
+    #opt_label{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    }
+     .text1_opt{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    }
+    .text2_opt{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    }
+    #logo_img_opt{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 15%;
+    height: 5%;
+    }
+    #box1_opt{
+    display: flex;
+    position: absolute;
+    top: 0.2%;
+    left: 40%;
+    height: 7%;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+}
+#color_opt{
+    display: inline-flex;
+    background-color: #1662c6;
+    border-radius: 30px;
+    position: absolute;
+    left: 0.1%;
+    top: 8%;
+    width: 100%;
+    height: 20%;    
+}
+#dark_radio {
+    position: absolute;
+    left: 5%;
+}
+#white_radio {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+#theme_txt_opt2{
+    position: absolute;
+    top: 23.5%;
+    left: 11%;
+}
+#theme_txt_opt1{
+    position: absolute;
+    top: 48.5%;
+    left: 11%;
+}
 }
