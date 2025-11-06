@@ -77,11 +77,11 @@
 }
 #dark_radio {
     position: absolute;
-    left: 15%;
+    left: 2.5%;
 }
 #white_radio{
     position: absolute;
-    left: 2.5%;
+    left: 15%;
 }
 #rus_radio {
     position: absolute;
@@ -91,22 +91,22 @@
     position: absolute;
     left: 2.5%;
 }
-#theme_txt_opt1{
+#theme_txt_opt_light{
     position: absolute;
     top: 34.5%;
     left: 17.5%;
 }
-#theme_txt_opt2{
+#theme_txt_opt_dark{
     position: absolute;
     top: 34.5%;
     left: 5%;
 }
-#lang_txt_opt1{
+#lang_txt_opt_rus{
     position: absolute;
     top: 34.5%;
     left: 17.5%;
 }
-#lang_txt_opt2{
+#lang_txt_opt_eng{
     position: absolute;
     top: 34.5%;
     left: 5%;
@@ -121,12 +121,12 @@
     font-size: 30px;
     color: #ffffff;
     }
-#color_txt_opt1{
+#color_txt_opt_blue{
     position: absolute;
     top: 34.5%;
     left: 35%;
 }
-#color_txt_opt2{
+#color_txt_opt_red{
     position: absolute;
     top: 34.5%;
     left: 47.5%;
@@ -140,9 +140,6 @@
     left: 45%;
 }
 @media only screen and (max-width : 740px) {
-    div{
-        border: red solid 1px;
-    }
     #logo_text_opt{
     position: absolute;
     top: 0.7%;
@@ -171,7 +168,7 @@
     position: absolute;
     top: 1%;
     left: 1%;
-    width: 15%;
+    width: 17%;
     height: 5%;
     }
     #box1_opt{
@@ -203,14 +200,66 @@
     left: 5%;
     top: 55%;
 }
-#theme_txt_opt2{
-    position: absolute;
-    top: 23.5%;
-    left: 11%;
-}
-#theme_txt_opt1{
+#theme_txt_opt_light{
     position: absolute;
     top: 48.5%;
     left: 11%;
 }
+#theme_txt_opt_dark{
+    position: absolute;
+    top: 23.5%;
+    left: 11%;
+}
+#color_txt_opt{
+    margin-left: 6%;
+}
+#blue_radio {
+    position: absolute;
+    left: 36%;
+}
+#red_radio {
+    position: absolute;
+    left: 36%;
+    top: 55%;
+}
+#color_txt_opt_blue{
+    position: absolute;
+    top: 23.5%;
+    left: 42%;
+}
+#color_txt_opt_red{
+    position: absolute;
+    top: 48.5%;
+    left: 42%;
+}
+#lang_opt{
+    display: inline-flex;
+    background-color: #1d80e3;
+    border-radius: 30px;
+    position: absolute;
+    left: 0.1%;
+    top: 30%;
+    width: 100%;
+    height: 20%;    
+}
+#rus_radio {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+#eng_radio{
+    position: absolute;
+    left: 5%;
+}
+#lang_txt_opt_rus{
+    position: absolute;
+    top: 48.5%;
+    left: 11%;
+}
+#lang_txt_opt_eng{
+    position: absolute;
+    top: 23.5%;
+    left: 11%;
+}
+
 }
