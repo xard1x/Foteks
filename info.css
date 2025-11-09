@@ -77,8 +77,13 @@ span{
 #inf_txt3, #inf_txt4, #inf_txt5{
     margin-left: 10%;
 }
-#inf_txt7, #inf_txt8, #inf_txt9, #inf_txt10{
+#info2{
+    visibility: hidden; 
+    opacity: 0;
+}
+#inf_txt7, #inf_txt8, #inf_txt9, #inf_txt10, #inf_txt6{
     margin-left: 10%;
+    cursor: pointer;
 }
 #but_inf{
     border: none;
@@ -111,4 +116,94 @@ span{
    cursor: pointer;
    visibility: hidden; 
    opacity: 0;
+}
+
+@media only screen and (max-width : 740px) {
+    #logo_text_inf{
+    position: absolute;
+    top: 0.7%;
+    left: 17%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #043464;
+    }
+    #inf_label{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    }
+    .inf_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    }
+    #info_logo_img{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 17%;
+    height: 5%;
+    }
+    #box1_inf{
+    display: flex;
+    position: absolute;
+    top: 0.2%;
+    left: 40%;
+    height: 7%;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    #box2_inf{
+    display: flex;
+    background-color: #1662c6;
+    border-radius: 15px;
+    position: absolute;
+    left: 0.1%;
+    top: 8%;
+    width: 100%;
+    height: 8%;
+    }
+    #box3_inf{
+    display: block;
+    background-color: #1d80e3;
+    border-radius: 30px;
+    position: absolute;
+    left: 0.1%;
+    top: 20%;
+    width: 100%;
+    height: 36%;    
+}
+#but_inf{
+    border: none;
+    outline: none;
+    width: 25%;
+    height: 6%;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+    background-color: #4ca3fa;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 58%;
+    left: 75%;
+    cursor: pointer;
+}
+#but2_inf{
+    border: none;
+    outline: none;
+    width: 25%;
+    height: 6%;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+    background-color: #4ca3fa;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 58%;
+    left: 75%;
+    cursor: pointer;
+}
 }

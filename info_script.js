@@ -4,12 +4,10 @@ but1 = document.getElementById('but_inf')
 but2 = document.getElementById('but2_inf')
 txt2 = document.getElementById('info2')
 
-
  function click_forward(){ 
     txt.style.visibility = 'hidden'
     txt.style.opacity = '0'
     txt.style.display = 'none'
-
     but1.style.visibility = 'hidden'
     but1.style.opacity = '0'
 
