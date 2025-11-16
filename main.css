@@ -50,12 +50,24 @@
     justify-content: center;
     align-items: center;
     height: 12%;
-    width: 53%;
+    width: 26%;
     background-color: #1d80e3;
     border-radius: 30px;
     position: absolute;
     top: 21%;
-    left: 22%;
+    left: 36%;
+}
+#main_box3{
+    height: 45%;
+    width: 26%;
+    background-color: #1d80e3;
+    border-radius: 30px;
+    position: absolute;
+    top: 21%;
+    left: 49%;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
 }
 .custom-file-upload {
     color: white;
@@ -69,8 +81,17 @@
     background-color: #4ca3fa;
 }
 #main_img{
+    display: block;
     visibility: hidden;
     opacity: 0;
     display: none;
-
+    border-radius: 15px;
+}
+#final_text{
+    font-size: 9vm;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
 }
