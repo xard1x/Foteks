@@ -22,3 +22,39 @@
     font-weight: bold;
     color: #043464;
 }
+.main_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+.main_text2{
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: white;
+}
+#main_box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.7%;
+    width: 53%;
+    background-color: #1662c6;
+    border-radius: 30px;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+}
+.custom-file-upload {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px; 
+    font-family: "Roboto", sans-serif;
+}
