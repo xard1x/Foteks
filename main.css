@@ -45,16 +45,26 @@
     top: 10%;
     left: 22%;
 }
-.custom-file-upload {
+#main_box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 53%;
+    background-color: #1d80e3;
+    border-radius: 30px;
     position: absolute;
-    left: 20%;
-    top: 20%;
+    top: 21%;
+    left: 22%;
+}
+.custom-file-upload {
+    color: white;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
+    border-radius: 10px;
     margin-bottom: 10px; 
+    font-size: 30px;
     font-family: "Roboto", sans-serif;
+    background-color: #4ca3fa;
 }
