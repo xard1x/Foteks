@@ -7,6 +7,7 @@ function file(){
     const box1 = document.getElementById('main_box3')
     file_input.addEventListener('change', function() {
         const image = document.getElementById('main_img')
+        const body = document.querySelectorAll('body')
         let files = event.target.files
         if (files.length > 0) {
         let fileName = files[0].name;
@@ -20,8 +21,8 @@ function file(){
         image.style.opacity = '1'
         image.style.display = 'block'
         image.style.marginTop = '3%'
-        image.style.height = '85%'
-        image.style.width = '70%'
+        
+        console.log(fileUrl.style.width)
 
         Tesseract.recognize(
         fileUrl,
@@ -31,12 +32,11 @@ function file(){
         console.log(text)
         txt2.innerHTML = text
         })
+        
     });
-
     button1.style.visibility = 'hidden'
     button1.style.opacity = '0'
     button1.style.display = 'none'
-    box.style.height = '45%'
     box.style.left = '22%'
     box.style.alignItems = 'flex-start'
     box1.style.visibility = 'visible'
