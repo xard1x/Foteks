@@ -1,13 +1,14 @@
 function file(){   
     const button1 = document.getElementById('main_box2_2')
-    const box = document.getElementById('main_box2')
+    var box = document.getElementById('main_box2')
     let txt1 = document.getElementById('main_txt1')
     let txt2 = document.getElementById('final_text')
     let file_input = document.getElementById('real-input');
     const box1 = document.getElementById('main_box3')
+
+
     file_input.addEventListener('change', function() {
         const image = document.getElementById('main_img')
-        const body = document.querySelectorAll('body')
         let files = event.target.files
         if (files.length > 0) {
         let fileName = files[0].name;
@@ -20,9 +21,23 @@ function file(){
         image.style.visibility = 'visible'
         image.style.opacity = '1'
         image.style.display = 'block'
-        image.style.marginTop = '3%'
+        image.style.marginTop = '1%'
         
-        console.log(fileUrl.style.width)
+        box.style.background = 'white'
+
+        const reader = new FileReader();
+        reader.readAsDataURL(event.target.files[0]);
+    
+        reader.onload = () => {
+        let img = new Image();   
+        img.src = reader.result;
+        img.onload = () => {
+            globalImageWidth = img.width;
+            globalImageHeight = img.height;
+            
+            console.log(`Ширина: ${globalImageWidth}, Высота: ${globalImageHeight}`);
+        };
+    }
 
         Tesseract.recognize(
         fileUrl,
@@ -34,6 +49,7 @@ function file(){
         })
         
     });
+
     button1.style.visibility = 'hidden'
     button1.style.opacity = '0'
     button1.style.display = 'none'
