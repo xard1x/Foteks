@@ -27,24 +27,12 @@ function file(){
 
         const reader = new FileReader();
         reader.readAsDataURL(event.target.files[0]);
-    
-        reader.onload = () => {
-        let img = new Image();   
-        img.src = reader.result;
-        img.onload = () => {
-            globalImageWidth = img.width;
-            globalImageHeight = img.height;
-            
-            console.log(`Ширина: ${globalImageWidth}, Высота: ${globalImageHeight}`);
-        };
-    }
 
         Tesseract.recognize(
         fileUrl,
-        'rus',
+        'rus+eng',
         { logger: m => console.log(m)}
         ).then(({ data: { text } }) => {
-        console.log(text)
         txt2.innerHTML = text
         })
         
@@ -53,11 +41,17 @@ function file(){
     button1.style.visibility = 'hidden'
     button1.style.opacity = '0'
     button1.style.display = 'none'
-    box.style.left = '22%'
-    box.style.alignItems = 'flex-start'
+    box.style.visibility = 'hidden'
+    box.style.opacity = '0'
+    box.style.display = 'none'
+    
+
     box1.style.visibility = 'visible'
     box1.style.opacity = '1'
-    box1.style.display = 'block'
-    
+    box1.style.display = 'flex'
+    box1.style.justifyContent = 'center'
+    box1.style.left = '22%'
+    box1.style.height = 'auto'
+    box1.style.width = '53%'
     
 } 
