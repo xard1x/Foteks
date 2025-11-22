@@ -5,7 +5,7 @@ function file(){
     let txt2 = document.getElementById('final_text')
     let file_input = document.getElementById('real-input');
     const box1 = document.getElementById('main_box3')
-
+    const buts = document.getElementById('buts')
 
     file_input.addEventListener('change', function() {
         const image = document.getElementById('main_img')
@@ -45,13 +45,15 @@ function file(){
     box.style.opacity = '0'
     box.style.display = 'none'
     
-
     box1.style.visibility = 'visible'
     box1.style.opacity = '1'
-    box1.style.display = 'flex'
-    box1.style.justifyContent = 'center'
+    box1.style.display = 'block'
     box1.style.left = '22%'
     box1.style.height = 'auto'
     box1.style.width = '53%'
-    
+
+    buts.style.visibility = 'visible'
+    buts.style.opacity = '1'
+    buts.style.display = 'flex'
+    buts.style.justifyContent = 'space-around'
 } 
