@@ -112,6 +112,9 @@ span{
     width: 30%;
     height: 100%;
 }
+#theme_lb{
+    cursor: pointer;
+}
 @media only screen and (max-width : 740px) {
     #logo_text{
     position: absolute;
