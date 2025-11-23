@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src = "main_script.js"></script>
+    <script src = "./main_script.js"></script>
     <div id="main_main_box">
         <a href="index.html">
             <img src="ph.png" id="main_logo_img">
@@ -27,7 +27,7 @@
         <div id="main_box2">
             <div id="main_box2_2">
             <input type="file" id="real-input" hidden/>
-            <label for="real-input" class="custom-file-upload" onclick="file()">
+            <label for="real-input" class="custom-file-upload" onclick="file_img()">
                 Загрузить файл
             </label>
             </div>
@@ -36,10 +36,18 @@
         <div id="main_box3"> 
             <p id="final_text"></p>
             <div id="buts">
-            <button id="but1" class="but">Редактировать</button>
+            <button id="but1" class="but" onclick="open_img()">Открыть фото</button>
             <button id="but2" class="but">Редактировать</button>
+            <button id="but3" class="but">Скопировать</button>
+            <button id="but4" class="but">Скачать текст</button>
+            
             </div>
         </div>  
+    </div>
+        <div id="main_main_box2">
+            <img src="" id="main_img2">
+            <button id="but5" class="but" onclick="close_img()">Назад</button>
+        </div>
         
 </body>
 </html>

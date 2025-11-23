@@ -1,4 +1,5 @@
-function file(){   
+var fileUrl = '';
+function file_img(){   
     const button1 = document.getElementById('main_box2_2')
     var box = document.getElementById('main_box2')
     let txt1 = document.getElementById('main_txt1')
@@ -6,9 +7,8 @@ function file(){
     let file_input = document.getElementById('real-input');
     const box1 = document.getElementById('main_box3')
     const buts = document.getElementById('buts')
-
+    
     file_input.addEventListener('change', function() {
-        const image = document.getElementById('main_img')
         let files = event.target.files
         if (files.length > 0) {
         let fileName = files[0].name;
@@ -16,13 +16,12 @@ function file(){
         }
         
         let file = event.target.files[0];
-        let fileUrl = URL.createObjectURL(file);
-        image.src = fileUrl
-        image.style.visibility = 'visible'
-        image.style.opacity = '1'
-        image.style.display = 'block'
-        image.style.marginTop = '1%'
+        fileUrl = URL.createObjectURL(file);
         
+        const img = document.getElementById('main_img2')
+        img.src = fileUrl
+        img.style.borderRadius = '25px'
+
         box.style.background = 'white'
 
         const reader = new FileReader();
@@ -57,3 +56,28 @@ function file(){
     buts.style.display = 'flex'
     buts.style.justifyContent = 'space-around'
 } 
+
+function open_img(){
+    const full_box = document.getElementById('main_main_box')
+    const sec_box = document.getElementById('main_main_box2')
+    full_box.style.visibility = 'hidden'
+    full_box.style.opacity = '0'
+    full_box.style.display = 'none'
+    sec_box.style.visibility = 'visible'
+    sec_box.style.opacity = '1'
+    sec_box.style.display = 'flex'
+    sec_box.style.justifyContent = 'center'
+    sec_box.style.alignItems = 'center'
+    sec_box.style.flexDirection = 'column'
+}
+function close_img(){
+    const full_box = document.getElementById('main_main_box')
+    const sec_box = document.getElementById('main_main_box2')
+    full_box.style.visibility = 'visible'
+    full_box.style.opacity = '1'
+    full_box.style.display = 'flex'
+    sec_box.style.visibility = 'hidden'
+    sec_box.style.opacity = '0'
+    sec_box.style.display = 'none'
+
+}
