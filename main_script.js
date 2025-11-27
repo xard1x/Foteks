@@ -117,3 +117,13 @@ function ok_text(){
   but_edit.style.display = 'block'
   txt3.innerHTML = input.value
 }
+function downloadTxtFile() {
+  const txt3 = document.getElementById('final_text')
+  const element = document.createElement('a');
+  const file = new Blob([txt3.innerHTML], {type: 'text/plain'});
+  element.href = URL.createObjectURL(file);
+  element.download = 'text.txt';
+  document.body.appendChild(element); 
+  element.click();
+  document.body.removeChild(element); 
+}
