@@ -130,3 +130,12 @@
     width: 10%;
     height: 5%;
 }
+#but6{
+    margin-left: 2%;
+    border-radius: 10px;
+}
+#input_box{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}

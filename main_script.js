@@ -1,4 +1,5 @@
 var fileUrl = '';
+
 function file_img(){   
     const button1 = document.getElementById('main_box2_2')
     var box = document.getElementById('main_box2')
@@ -80,4 +81,39 @@ function close_img(){
     sec_box.style.opacity = '0'
     sec_box.style.display = 'none'
 
+}
+async function copyToClipboard() {
+  const txt3 = document.getElementById('final_text')
+  try {
+    await navigator.clipboard.writeText(txt3.innerHTML);
+    console.log('Текст успешно скопирован в буфер обмена');
+  } catch (err) {
+    console.error('Ошибка при копировании текста: ', err);
+  }
+}
+function edit_text() {
+  const txt3 = document.getElementById('final_text')
+  input_text = document.getElementById('input_box')
+  but_edit = document.getElementById('but2')
+  input = document.getElementById('input_text')
+  but_edit.style.visibility = 'hidden'
+  but_edit.style.opacity = '0'
+  but_edit.style.display = 'none'
+  input_text.style.visibility = 'visible'
+  input_text.style.opacity = '1'
+  input_text.style.display = 'flex'
+  input.value = txt3.innerHTML
+}
+function ok_text(){
+  const txt3 = document.getElementById('final_text')
+  input_text = document.getElementById('input_box')
+  but_edit = document.getElementById('but2')
+  input = document.getElementById('input_text')
+  input_text.style.visibility = 'hidden'
+  input_text.style.opacity = '0'
+  input_text.style.display = 'none'
+  but_edit.style.visibility = 'visible'
+  but_edit.style.opacity = '1'
+  but_edit.style.display = 'block'
+  txt3.innerHTML = input.value
 }

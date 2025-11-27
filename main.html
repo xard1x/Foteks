@@ -37,8 +37,12 @@
             <p id="final_text"></p>
             <div id="buts">
             <button id="but1" class="but" onclick="open_img()">Открыть фото</button>
-            <button id="but2" class="but">Редактировать</button>
-            <button id="but3" class="but">Скопировать</button>
+            <button id="but2" class="but" onclick="edit_text()">Редактировать</button>
+            <div id="input_box">
+                <input type="text" id="input_text" value="">
+                <button id="but6" class="but" onclick="ok_text()">ОК</button>
+            </div>
+            <button id="but3" class="but" onclick="copyToClipboard()">Скопировать</button>
             <button id="but4" class="but">Скачать текст</button>
             
             </div>
