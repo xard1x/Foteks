@@ -52,6 +52,11 @@ function file_img(){
     box1.style.height = 'auto'
     box1.style.width = '53%'
 
+    if (window.innerWidth <= '740'){
+       box1.style.left = '0.1%'
+       box1.style.width = '100%'
+    }
+
     buts.style.visibility = 'visible'
     buts.style.opacity = '1'
     buts.style.display = 'flex'
@@ -70,6 +75,9 @@ function open_img(){
     sec_box.style.justifyContent = 'center'
     sec_box.style.alignItems = 'center'
     sec_box.style.flexDirection = 'column'
+    if (window.innerWidth <= '740'){
+      sec_box.style.justifyContent = 'flex-start'
+    }
 }
 function close_img(){
     const full_box = document.getElementById('main_main_box')
