@@ -122,7 +122,7 @@ span{
     #logo_text_inf{
     position: absolute;
     top: 0.7%;
-    left: 17%;
+    left: 18%;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -142,7 +142,7 @@ span{
     #info_logo_img{
     position: absolute;
     top: 1%;
-    left: 1%;
+    left: 2%;
     width: 17%;
     height: 5%;
     }
@@ -150,7 +150,7 @@ span{
     display: flex;
     position: absolute;
     top: 0.2%;
-    left: 40%;
+    left: 41%;
     height: 7%;
     width: 40%;
     justify-content: flex-start;
@@ -161,9 +161,9 @@ span{
     background-color: #1662c6;
     border-radius: 15px;
     position: absolute;
-    left: 0.1%;
+    left: 2%;
     top: 8%;
-    width: 100%;
+    width: 96%;
     height: 8%;
     }
     #box3_inf{
@@ -171,9 +171,9 @@ span{
     background-color: #1d80e3;
     border-radius: 30px;
     position: absolute;
-    left: 0.1%;
+    left: 2%;
     top: 17%;
-    width: 100%;
+    width: 96%;
     height: 36%;    
 }
 #but_inf{
@@ -187,8 +187,8 @@ span{
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 58%;
-    left: 75%;
+    top: 54%;
+    left: 73%;
     cursor: pointer;
 }
 #but2_inf{
@@ -202,8 +202,8 @@ span{
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 58%;
-    left: 75%;
+    top: 54%;
+    left: 73%;
     cursor: pointer;
 }
 }

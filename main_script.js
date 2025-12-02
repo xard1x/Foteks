@@ -64,8 +64,13 @@ function file_img(){
 } 
 
 function open_img(){
+    const img = document.getElementById('main_img2')
     const full_box = document.getElementById('main_main_box')
     const sec_box = document.getElementById('main_main_box2')
+    if (window.innerWidth <= '740'){
+       img.style.width = '75%'
+       img.style.height = '25%'
+    }
     full_box.style.visibility = 'hidden'
     full_box.style.opacity = '0'
     full_box.style.display = 'none'
