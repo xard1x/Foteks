@@ -119,7 +119,7 @@ span{
     #logo_text{
     position: absolute;
     bottom: 92%;
-    left: 17%;
+    left: 50%;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -131,19 +131,21 @@ span{
     }
     #box1{
     display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 1.2%;
-    left: 40%;
-    height: 5%;
-    width: 60%;
+    top: 7%;
+    left: 35%;
+    height: 10%;
+    width: 33%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     }
     .but1{
     border: none;
     outline: none;
-    width: 20%;
-    height: 50%;
+    width: 35%;
+    height: 20%;
     border-radius: 10px;
     font-family: "Roboto", sans-serif;
     background-color: #1d80e3;
@@ -154,7 +156,7 @@ span{
     #logo_img{
     position: absolute;
     top: 1%;
-    left: 1%;
+    left: 35%;
     width: 13%;
     height: 5%;
     }
@@ -168,55 +170,56 @@ span{
     }
     #main_img{
     position: absolute;
-    left: 1%;
-    top: 7%;
+    left: 4%;
+    top: 17%;
     border-radius: 10px;
     opacity: 0.6;
-    width: 98%;
-    height: 50%;
+    width: 92%;
+    height: 42%;
     }
     #img_backg{
     position: absolute;
-    left: 1%;
-    top: 7%;
-    width: 98%;
-    height: 50%;
+    left: 4%;
+    top: 17%;
+    width: 92%;
+    height: 42%;
     background-color: #1d80e3;
     z-index: -1;
     border-radius: 10px;
     }
     #info_box{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 92%;
+    height: 40%;
     position: absolute;
-    left: 0.1%;
-    top: 58%;
+    left: 4%;
+    top: 60%;
 }
 #info_box1{
     display: flex;
     align-items: center;
     border-radius: 10px;
     background-color: #1662c6;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 25%;
 }
 #info_box2{
     display: flex;
     align-items: center;
     border-radius: 10px;
     background-color: #1d80e3;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 25%;
 }
 #info_box3{
     display: flex;
     align-items: center;
     border-radius: 10px;
     background-color: #4ca3fa;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 25%;
 }
 .text2{
     margin-left: 6%;

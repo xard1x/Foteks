@@ -53,8 +53,13 @@ function file_img(){
     box1.style.width = '53%'
 
     if (window.innerWidth <= '740'){
-       box1.style.left = '0.1%'
-       box1.style.width = '100%'
+       box1.style.left = '2%'
+       box1.style.width = '96%'
+       const but1 = document.getElementById('but1')
+       but1.style.visibility = 'hidden'
+       but1.style.opacity = '0'
+       but1.style.display = 'none'
+    
     }
 
     buts.style.visibility = 'visible'
@@ -67,10 +72,6 @@ function open_img(){
     const img = document.getElementById('main_img2')
     const full_box = document.getElementById('main_main_box')
     const sec_box = document.getElementById('main_main_box2')
-    if (window.innerWidth <= '740'){
-       img.style.width = '75%'
-       img.style.height = '25%'
-    }
     full_box.style.visibility = 'hidden'
     full_box.style.opacity = '0'
     full_box.style.display = 'none'
@@ -80,9 +81,6 @@ function open_img(){
     sec_box.style.justifyContent = 'center'
     sec_box.style.alignItems = 'center'
     sec_box.style.flexDirection = 'column'
-    if (window.innerWidth <= '740'){
-      sec_box.style.justifyContent = 'flex-start'
-    }
 }
 function close_img(){
     const full_box = document.getElementById('main_main_box')
